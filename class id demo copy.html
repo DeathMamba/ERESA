@@ -1,0 +1,49 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>grid demo</title>
+<link rel="shortcut icon" href="favicon.ico"/>
+<style>
+    body{
+        background-color: rgb(197, 160, 221);
+    }
+.ryan{
+   color: blueviolet;
+}
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 10px 10px; 
+  grid-template-areas: 
+    "navigation navigation navigation"
+    "side content content"
+    "side content content"
+    "footer footer footer"; 
+}
+.navigation { grid-area: navigation; 
+background-color: rgb(124, 38, 210);}
+.side { grid-area: side; 
+background-color: rgb(162, 95, 226);}
+.content { grid-area: content; 
+background-color: rgb(178, 124, 230);}
+.footer { grid-area: footer;
+background-color: rgb(105, 70, 138);}
+</style>
+</head>
+        
+<body>
+    <div class="container">
+        <div class="navigation">Weird Facts About Flowers</div>
+        <div class="side">Flowers can hear buzzing bees</div>
+        <div class="content">Some flowers are carnivorous and trap insects to digest them.</div>
+        <div class="footer">Some flowers are capable of moving, a trait that is known as thigmotropism.</div>
+      </div>
+      <P><a href="index.html"><span class="ryan"><ins>bye bye go home</ins></span></a></P>
+</body>
+
+
+</html>
